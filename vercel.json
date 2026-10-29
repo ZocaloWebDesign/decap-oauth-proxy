@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/auth", "destination": "/api/auth" },
-    { "source": "/callback", "destination": "/api/callback" }
+    { "source": "/login", "destination": "/api/login" },
+    { "source": "/gh/:path*", "destination": "/api/github?path=:path*" }
   ]
 }
